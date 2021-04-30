@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Verify Brahcn') {
+        stage('Verify Branch') {
             steps {
                 echo $GIT_BRANCH
             }
