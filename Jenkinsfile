@@ -11,11 +11,11 @@ pipeline {
             steps {
                 pwsh(script: 'docker images -a')
                 pwsh(script: """
-                cd azure-vote/
-                dockert images -a
-                docker build -t jenkins-pipeline .
-                cd ..
-            """)
+                    cd azure-vote/
+                    dockert images -a
+                    docker build -t jenkins-pipeline .
+                    cd ..
+                """)
             }
         }
     }
