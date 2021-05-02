@@ -13,7 +13,7 @@ pipeline {
                 pwsh(script: """
                     cd azure-vote/
                     docker images -a
-                    docker build -t dockerfile .
+                    docker build -t jenkins-pipeline .
                     cd ..
                 """)
             }
